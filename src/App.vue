@@ -1,14 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style>
+body, p, div, h1, h2,h3, h4, h5, ul, li{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: black;
+  font-size: 16px;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.cesium-viewer-bottom{
+  display: none !important;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
