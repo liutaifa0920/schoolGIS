@@ -289,11 +289,6 @@ export default {
       viewer.entities.removeAll();
       this.currentNavType = "build"; // 更改Nav状态
       this.buildInfoBoxFlag = false;
-      // viewer.zoomTo(tileset, {
-      //   heading: Cesium.Math.toRadians(-55),
-      //   pitch: Cesium.Math.toRadians(-15),
-      //   range: 500
-      // });
       if (this.currentNavType == "build") {
         this.flyToStartCamera();
       }
