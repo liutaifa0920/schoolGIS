@@ -892,7 +892,7 @@ export default {
         destination: Cesium.Cartesian3.fromDegrees(
           118.29409588101844,
           34.96556316800423,
-          120
+          80
         ), // 设置位置
         orientation: {
           heading: Cesium.Math.toRadians(50), // 方向
@@ -901,7 +901,7 @@ export default {
         }
       });
 
-this.createModel(
+      this.createModel(
         {
           year: 2018,
           mounth: 11,
@@ -943,6 +943,29 @@ this.createModel(
       lineArr.map((e, i) => {
         this.createLine(e, 2000, 3);
       })
+
+       ysc.addCircleRipple(viewer,{ 
+        // id:"111",
+        lon:118.29875405535397,
+        lat:34.967412733816055,
+        height:2,
+        maxR:100,
+        minR:0,
+        deviationR:1,
+        eachInterval:1000,
+        imageUrl:"img/CesiumItem/redCircle2.png"
+      });
+      ysc.addCircleRipple(viewer,{ 
+        // id:"222",
+        lon:118.29503358214413,
+        lat:34.96683102502867,
+        height:2,
+        maxR:100,
+        minR:0,
+        deviationR:1,
+        eachInterval:1000,
+        imageUrl:"img/CesiumItem/redCircle2.png"
+      });
     },
 
     // 返回初始视角
