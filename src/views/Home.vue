@@ -1173,6 +1173,10 @@ export default {
             material: new Cesium.PolylineTrailLinkMaterialProperty(Cesium.Color.BLUE, speed) //混合颜色、(红绿混合透明后 就是黄色了)3000秒发射间隔,单纯材质无法展示飞行动态。所以去掉了。
           }
         });
+    },
+    // 消防演习视角切换
+    cameraToFireHelp(){
+
     }
   },
   watch: {
